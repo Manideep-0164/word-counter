@@ -3,6 +3,8 @@ const app = express();
 require("dotenv").config();
 const connection = require("./configs/db");
 const userRouter = require("./routes/user.router");
+const insightsRouter = require("./routes/insights.router");
+const { attachUserEmail } = require("./middlewares/attachUserEmail.middleware");
 const PORT = process.env.PORT;
 
 app.use(express.json());
@@ -12,7 +14,8 @@ app.get("/", (req, res) => {
   res.status(200).json({ message: "Server is live" });
 });
 
-app.use("/", userRouter);
+app.use("/", attachUserEmail, userRouter);
+app.use("/", insightsRouter);
 
 connection
   .then(() => {
