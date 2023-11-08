@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 require("dotenv").config();
 const connection = require("./configs/db");
+const userRouter = require("./routes/user.router");
 const PORT = process.env.PORT;
 
 app.use(express.json());
@@ -10,6 +11,8 @@ app.use(require("cors")());
 app.get("/", (req, res) => {
   res.status(200).json({ message: "Server is live" });
 });
+
+app.use("/", userRouter);
 
 connection
   .then(() => {
