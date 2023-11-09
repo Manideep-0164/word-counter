@@ -9,6 +9,6 @@ const {
 insightsRouter.post("/insights", getInsights);
 insightsRouter.patch("/insights/:id", updateInsights);
 insightsRouter.delete("/insights/:id", deleteInsights);
-insightsRouter.get("/insights", getAllInsights);
+insightsRouter.post("/insights-history", getAllInsights);
 
 module.exports = insightsRouter;
