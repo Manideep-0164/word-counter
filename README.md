@@ -1,5 +1,6 @@
 ---
-⭐Deployed Link:- https://654cea3277617b580a0c32cd--joyful-lily-4c6d28.netlify.app/
+## Deployed Link
+⭐ [Live Demo](https://654cea3277617b580a0c32cd--joyful-lily-4c6d28.netlify.app/)
 ---
 
 # WordCounter
