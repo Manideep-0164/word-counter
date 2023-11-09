@@ -1,0 +1,28 @@
+.custom-nav {
+    width: 100%;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    padding: 0 70px;
+    /* gap: 150px; */
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.custom-form {
+    width: 35%;
+    margin: auto;
+    text-align: left;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}

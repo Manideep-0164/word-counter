@@ -1,0 +1,23 @@
+.action-btns {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.tbody-place-holder {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.fav-insight {
+    color: #1ec71e !important;
+    font-weight: 700;
+}
+
+.not-fav-insight {
+    color: red !important;
+    font-weight: 700;
+}
